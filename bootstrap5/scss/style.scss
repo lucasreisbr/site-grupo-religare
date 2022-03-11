@@ -1,0 +1,92 @@
+
+@import "bootstrap-grid";
+@import "bootstrap-reboot";
+@import "bootstrap-utilities";
+@import "bootstrap";
+
+a {
+    text-decoration: none;
+}
+
+.bg-one {
+    @include gradient-x-three-colors($start-color: $blue, $mid-color: $purple, $color-stop: 50%, $end-color: $red) ;
+}
+
+
+.bg-deep {
+    background-image: url('/img/bg_capa.jpg');
+    background-size: cover;
+    background-position: top right;
+    min-height: 100vh;
+}
+
+.vh-100{
+    height: 100vh !important;
+}
+
+.logo {
+    max-width: 35%;
+    @media (max-width: 810px) {
+        max-width: 65%;
+    }
+    @media (max-width: 480px) {
+        max-width: 85%;
+    }
+}
+
+.stripe{
+    height: 2vh;
+}
+
+.stripe2{
+    height: 1vh;
+}
+
+.bg-nos {
+    background-image: url('/img/bg_nos.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+
+.bg-quem {
+    background-image: url('/img/bg_resp.jpg');
+    background-size: cover;
+    background-position: top center;
+    min-height: 100vh;
+}
+
+.border-des {
+    border-radius: 0 0 6rem;
+}
+
+.bg-empresa {
+    background-color: $gray-200;
+}
+
+.border-empre {
+    border-radius: 0 0 0 10rem;
+}
+
+.border-footer {
+    border-radius: 0 10rem 0 0;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: $green;  
+  }
+  
+  #myBtn:hover {
+    background-color: transparent;
+    color: $gray-500;
+  }
