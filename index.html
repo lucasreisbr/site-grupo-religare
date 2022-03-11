@@ -147,24 +147,21 @@
         <h1 class="text-center text-secondary mb-4">FALE COM O GRUPO RELIGARE</h1>
         <div class="col-6">
               <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-                <p>
-                  <label>
-                    Nome:<br> <input type="text" name="name" />
-                  </label>
+               <p>
+                  <label class="form-label"> Nome:</label>
+                  <input class="form-control" type="text" name="name" />
                 </p>
               <p>
-                <label>
-                  Email: <br><input type="text" name="email" />
-                </label>
+                <label class="form-label">Email:</label>
+                <input class="form-control" type="text" name="email" />
               </p>
               <p>
-                <label>
-                  Mensagem: <br><textarea name="message"></textarea>
-                </label>
+                <label class="form-label">Mensagem:</label>
+                <textarea class="form-control" name="message"></textarea>
               </p>
               <div data-netlify-recaptcha="true"></div>
               <p>
-                <button class="float-end" type="submit">Enviar</button>
+                <button class="float-end btn btn-lg btn-danger" type="submit">Enviar</button>
               </p>
             </form>
         </div>
